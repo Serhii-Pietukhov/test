@@ -1,4 +1,36 @@
+
+
+
+/* цвет основного текста #000000 */
+/* цвет описания color: rgba(0, 0, 0, 0.8); */
+/* белый цвет #ffffff */
+/* синий цвет акцент #18A0FB */
+/* вторичный цвет фона #F5F5F5; */
+
 body {
-  background-color: cornsilk;
-  color: rgba(185, 157, 157, 0.712);
+  background-color: #ffffff);
+  color: rgba(0, 0, 0, 0.8);
+}
+.list{
+  list-style: none;
+}
+
+.logo{
+  color:#000000;
+}
+.logo:hover{
+  color: #18A0FB;
+}
+/* site nav */
+.site-nav .link {
+
+  color:#18A0FB ;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+  color: #000000;
+}
+
+.section-title{
+  color: #000000;
 }
