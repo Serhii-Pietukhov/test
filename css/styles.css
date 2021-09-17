@@ -13,21 +13,39 @@
 body {
   background-color: var(--background-colour);
   color: var(--primary-text-colour);
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 .list {
   list-style: none;
 }
 
+/* Logo */
 .logo {
   color: var(--title-text-colour);
+  font-family: Comfortaa, cursive;
+
+  font-size: 28px;
+  line-height: 1.14;
+  text-decoration: none;
 }
+
 .logo:hover {
   color: var(--acent-colour);
 }
+
 /* site nav */
 .site-nav .link {
   color: var(--acent-colour);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2x;
+  text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--title-text-colour);
@@ -39,15 +57,37 @@ body {
 
 .section-title {
   color: var(--title-text-colour);
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
 }
+
+.section-descr {
+  font-size: 36px;
+  line-height: 1.39;
+}
+
 /* hero  */
+
 .hero-title {
   color: var(--title-text-colour);
+
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
 }
 
 /* Featuers list */
-.features-list .title {
+.features-list .title,
+.examples-list .title {
   color: var(--title-text-colour);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .features-list .link {
@@ -55,15 +95,24 @@ body {
 }
 
 /* Examples list */
-.examples-list .title {
+/* .examples-list .title {
   color: var(--title-text-colour);
-}
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+} */
 
 /* Button */
 
 .button {
   color: var(--title-text-colour);
   background-color: var(--background-colour);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
 }
 
 .button.primary {
