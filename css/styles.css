@@ -8,6 +8,7 @@
   --title-text-colour: #000000;
   --acent-colour: #18a0fb;
   --background-colour: #ffffff;
+  --secondary-background-colour: #f5f5f5;
 }
 
 body {
@@ -20,8 +21,20 @@ body {
 }
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  background-color: var(--background-colour);
+  outline: 2px solid tomato;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /* Logo */
 .logo {
   color: var(--title-text-colour);
@@ -57,23 +70,37 @@ body {
 
 .section-title {
   color: var(--title-text-colour);
+  margin-top: 0;
+  margin-bottom: 60;
 
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
   text-align: center;
 }
-
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section.no-padding {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 .section-descr {
   font-size: 36px;
   line-height: 1.39;
+  margin-bottom: 80px;
+  margin-top: 0;
 }
 
 /* hero  */
-
+.hero {
+  text-align: center;
+}
 .hero-title {
   color: var(--title-text-colour);
-
+  margin-top: 0;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 56px;
   line-height: 1.43;
@@ -84,16 +111,31 @@ body {
 .features-list .title,
 .examples-list .title {
   color: var(--title-text-colour);
+  margin-top: 0;
+  margin-bottom: 24px;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
 }
 
+.features-list p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
 .features-list .link {
   color: var(--acent-colour);
 }
 
+/* WORKS */
+.examples-list .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--background-colour);
+}
+.examples-list .item:nth-child(2n) {
+  background-color: var(--secondary-background-colour);
+}
 /* Examples list */
 /* .examples-list .title {
   color: var(--title-text-colour);
@@ -108,11 +150,16 @@ body {
 .button {
   color: var(--title-text-colour);
   background-color: var(--background-colour);
-
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 11px 34px;
+  display: inline-block;
+  min-width: 130px;
   font-weight: 500;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 1.2;
   text-decoration: none;
+  text-align: center;
 }
 
 .button.primary {
@@ -123,4 +170,5 @@ body {
 .button.secondary {
   color: var(--acent-colour);
   background-color: var(--background-colour);
+  border-color: var(--acent-colour);
 }
