@@ -19,6 +19,8 @@ body {
   font-size: 18px;
   line-height: 1.67;
 }
+
+/* Утилиты */
 .list {
   list-style: none;
   margin-top: 0;
@@ -49,8 +51,34 @@ body {
   color: var(--acent-colour);
 }
 
+/* Main nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* site nav */
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+
+/* .site-nav .item {
+  background-color: tomato;
+} */
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: var(--acent-colour);
 
   font-weight: 500;
@@ -66,6 +94,15 @@ body {
 
 .site-nav .link.current {
   color: var(--title-text-colour);
+}
+
+/* Auth nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
 
 .section-title {
@@ -91,6 +128,21 @@ body {
   line-height: 1.39;
   margin-bottom: 80px;
   margin-top: 0;
+  text-align: center;
+}
+
+/* Отзывы */
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-list li {
+  margin: 30px 40px;
 }
 
 /* hero  */
@@ -108,6 +160,18 @@ body {
 }
 
 /* Featuers list */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+.features-list .item {
+  width: 625px;
+  /* background-color: tomato; */
+  margin: 40px 75px;
+}
+
 .features-list .title,
 .examples-list .title {
   color: var(--title-text-colour);
@@ -129,13 +193,23 @@ body {
 
 /* WORKS */
 .examples-list .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--background-colour);
 }
 .examples-list .item:nth-child(2n) {
   background-color: var(--secondary-background-colour);
+  flex-direction: row-reverse;
 }
+.examples-list > .item:nth-child(2n + 1) .content {
+  margin-left: 84px;
+}
+.examples-list > .item:nth-child(2n) .content {
+  margin-right: 84px;
+}
+
 /* Examples list */
 /* .examples-list .title {
   color: var(--title-text-colour);
@@ -163,6 +237,7 @@ body {
 }
 
 .button.primary {
+  display: inline-block;
   color: var(--background-colour);
   background-color: var(--acent-colour);
 }
@@ -171,4 +246,25 @@ body {
   color: var(--acent-colour);
   background-color: var(--background-colour);
   border-color: var(--acent-colour);
+}
+
+.subscription {
+  height: 340px;
+  display: flex;
+  align-items: center;
+}
+.subscription .section-descr {
+  margin-bottom: 0;
+  height: 100px;
+  width: 943px;
+
+  /* margin-right: 84px; */
+  text-align: left;
+}
+.subscription .bottom {
+  width: 192px;
+}
+
+.subscription .bottom + .bottom {
+  margin-left: 45px;
 }

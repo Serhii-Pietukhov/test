@@ -16,21 +16,21 @@
  
     <!--Шапка сайта--> 
     <header> 
-        <nav class="container">
+        <nav class="container main-nav">
             <a href="/" class="logo">
                 <img src="./images/logo.svg" alt="Логотип компании">
                 photo
             
             </a>
             <ul class="site-nav list" >
-                <li> <a href="/" class="link current">Features</a> </li>
-                <li><a href="" class="link">Pricing</a></li>
-                <li><a href="./community.html" class="link">Community</a></li>
-                <li><a href="" class="link">Support</a></li>
+                <li class="item"><a href="" class="link">Pricing</a></li>
+                <li class="item"> <a href="/" class="link current">Features</a> </li>
+                <li class="item"><a href="./community.html" class="link">Community</a></li>
+                <li class="item"><a href="" class="link">Support</a></li>
             </ul>
             <ul class="auth-nav list">
-                <li><a href="" class="button secondary">Log in</a></li>
-                <li><a href="" class="button primary">Register</a></li>
+                <li class="item"><a href="" class="button secondary">Log in</a></li>
+                <li class="item"><a href="" class="button primary">Register</a></li>
             </ul>
         </nav>
     </header>
@@ -53,7 +53,7 @@
                     Snap photos and share like <br /> never before
                 </h2>
                 <ul class="features-list list">
-                    <li>
+                    <li class="item">
                         <h3 class="title"> Sed ut perspiciatis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos
@@ -63,7 +63,7 @@
                         <a href="" class="button secondary">Learn more</a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <h3 class="title"> Lorem ipsum dolor</h3>
                         <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                             enim ad minim
@@ -72,7 +72,7 @@
                         <a href="" class="button secondary">Learn more</a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <h3 class="title"> Nemo enim ipsam</h3>
                         <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
                             dolorem ipsum quia
@@ -81,7 +81,7 @@
                         <a href="" class="button secondary">Learn more</a>
                     </li>
                 
-                    <li>
+                    <li class="item">
                         <h3 class="title"> Tempor incididunt</h3>
                         <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                             amet, consectetur,
@@ -100,21 +100,25 @@
                 <ul class="examples-list list">
                     <li class="item">
                         <img src="./images/pic1.png" alt="" width="750">
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                            dolores eos qui
-                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
-                        </p>
+                       <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                dolores eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                            </p>
+                       </div>
                     </li>
                 
                     <li class="item">
                         <img src="./images/pic1.png" alt="" width="750">
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                            dolores
-                            eos qui
-                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
-                        </p>
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                dolores
+                                eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+                            </p>
+                        </div>
                     </li>
                     
                 
@@ -128,7 +132,7 @@
                 <h2 class="section-title">You’re in good company</h2>
                 <p class="section-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore</p>
-                <ul class="list">
+                <ul class="client-list list">
                     <li>
                         <a href=""><img src="./images/Rectangle.svg" alt="Логотип комапании"></a>
                     </li>
@@ -161,12 +165,14 @@
         <!--Подпишитесь-->
         <section class="section">
            <div class="container">
-                <h2 class="section-title">Подписаться на канал</h2>
-                <p class="section-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore</p>
-                
-                <a href="" class="button primary">Join Today</a>
-                <a href="" class="button secondary">Contact us</a>
+                <h2 class="section-title" hidden>Подписаться на канал</h2>
+                <div class="subscription">
+                    <p class="section-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore</p>
+                    
+                    <a href="" class="button primary bottom">Join Today</a>
+                    <a href="" class="button secondary bottom">Contact us</a>
+                </div>
            </div>
                
         </section>
